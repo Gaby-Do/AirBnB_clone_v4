@@ -1,4 +1,4 @@
-0x06. AirBnB clone - Web dynamic
+0x06. AirBnB clone - Web dynamic.
 
 - 1. Cash only
 - 2. Select some Amenities to be comfortable!
