@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function () {
   let all_checked = {};
   $(document).on('change', "input[type='checkbox']", function () {
@@ -15,10 +14,13 @@ $(document).ready(function () {
     }
   });
 });
-=======
-$(document).ready(function(){
-    $('#cajita').click(function(e){
-        $(this).alert("is check")
-    })
+$.get('http://0.0.0.0:5001/api/v1/status/', function (data, api_stat) {
+    if (api_stat === 'success') {
+      if (data.status === 'OK') {
+        $('#api_status').addClass('available');
+      } else {
+        $('#api_status').removeClass('available');
+      }
+    }
+  });
 });
->>>>>>> b3ae54a1ec3de5c47f04013cbc1b99d516528ff8
