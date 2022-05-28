@@ -1,4 +1,5 @@
-if (document.readyState == "complete"){
-    const ischecked = $('#cajita')[0].checked
-    alert("check???") 
-    }
+$(document).ready(function(){
+    $('#cajita').click(function(e){
+        $(this).alert("is check")
+    })
+});
